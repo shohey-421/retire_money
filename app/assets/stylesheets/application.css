@@ -12,6 +12,6 @@
  *
  *= require_tree .
  *= require_self
+ *= require _reset
+ *= require font-awesome
  */
-
- @import "reset";
