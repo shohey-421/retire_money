@@ -1,2 +1,39 @@
-<h1>Calculations#index</h1>
-<p>Find me in app/views/calculations/index.html.erb</p>
+<%= render "shared/header" %>
+
+<div class="main">
+  <div class="calc-wrapper">
+    <h2>計算式とか入れていくぅ</h2>
+    <div class="spendings">
+      <h3>支出</h3>
+      <div class="spending">
+        <h4>国民年金</h4>
+      </div>
+      <div class="spending">
+        <h4>住民税</h4>
+      </div>
+      <div class="spending">
+        <h4>国民健康保険</h4>
+      </div>
+      <div class="spending">
+        <h4>生活費</h4>
+      </div>
+      <div class="spending">
+        <h4>その他の固定出費</h4>
+      </div>
+    </div>
+    <div class="incomes"> 
+      <h3>収入</h3>
+      <div class="income">
+        <h4>退職金</h4>
+      </div>
+      <div class="income">
+        <h4>失業手当</h4>
+      </div>
+      <div class="income">
+        <h4>その他の固定収入</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>
