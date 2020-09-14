@@ -1,3 +1,5 @@
+
+
 .main{
   background-color: #ddd;
   padding: 30px 0;
@@ -9,4 +11,34 @@
   padding: 30px;
   background-color:#fff;
   border-radius: 10px;
+}
+
+.spendings{
+  margin-top: 30px;
+}
+
+.incomes{
+  margin-top: 30px;
+}
+
+.content-box{
+  margin-top: 25px;
+}
+
+.content{
+  margin-top: 15px;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.price-form{
+  border: 1px solid #888888;
+  border-radius: 3px;
+  margin: 0 5px 0 40px ;
+  text-align: end;
+  padding-right:10px ;
+  height: 25px;
+  width: 100px;
 }
