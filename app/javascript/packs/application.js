@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("../modal.js")
+require("../calc.js")
 
 
 
