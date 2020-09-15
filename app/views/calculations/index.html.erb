@@ -5,47 +5,89 @@
     <%= form_with url: root_path do |f| %>
       <h2></h2>
       <p>これから転職を考えている方向けに、退職後の支出と収入を整理するためのサイトです。<br>
-      貯蓄やキャッシュフローを整理して、退職時期などの参考にしてください。</p>
+      貯蓄やキャッシュフローを整理して、退職時期などの参考にしてください。<br>
+      <%= fa_icon"info-circle" %> をクリックすると詳細説明や参考リンクが表示されます。
+      </p>
       <div class="spendings">
         <h3>毎月の支出</h3>
         <div class="content-box">
-          <h4>国民年金  <%= fa_icon"info-circle" %></h4>
+          <h4>国民年金  <a class="js-modal-open" href="" data-target="modal01"><%= fa_icon"info-circle" %></a> </h4>
           <div class="content">
             <p>日本国内に住む20歳以上60歳未満のすべての人が加入します。保険料は1ヵ月16,540円（令和2年度）で、希望者のみ付加保険料1ヵ月400 円を納めます。</p>
             <%= f.text_field :nenkin, class:"price-form", id:"nenkin-form" ,value:"16540"%>円
           </div>
+          <div id="modal01" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>国民年金詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>国民健康保険  <%= fa_icon"info-circle" %></h4>
+          <h4>国民健康保険  <a class="js-modal-open" href="" data-target="modal02"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>会社の健康保険に加入していない方が加入します。保険料は市区町村によって変わります。<br>
             ※支払いは毎月ではありませんが、月あたりの支払額を知っておくと便利です。</p>
             <%= f.text_field :nenkin, class:"price-form", id:"kokuho-form" ,value:"0"%>円
           </div>
+          <div id="modal02" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>国民健康保険詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>住民税  <%= fa_icon"info-circle" %></h4>
+          <h4>住民税  <a class="js-modal-open" href="" data-target="modal03"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>会社に勤めていない場合は、個人で納める必要があります。税額は前年の所得と市区町村によって変わります。<br>
             ※支払いは毎月ではありませんが、月あたりの支払額を知っておくと便利です。</p>
             <%= f.text_field :nenkin, class:"price-form", id:"juumin-form" ,value:"0"%>円
           </div>
+          <div id="modal03" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>住民税詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>生活費  <%= fa_icon"info-circle" %></h4>
+          <h4>生活費  <a class="js-modal-open" href="" data-target="modal04"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>月の生活費の平均を入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form", id:"seikatu-form" ,value:"0"%>円
             </div>
           </div>
+          <div id="modal04" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>生活費詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>その他の固定支出  <%= fa_icon"info-circle" %></h4>
+          <h4>その他の固定支出  <a class="js-modal-open" href="" data-target="modal05"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>上記以外にも毎月の固定支出がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form", id:"other-spending-form" ,value:"0"%>円
+            </div>
+          </div>
+          <div id="modal05" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>その他の支出詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
             </div>
           </div>
         </div>
@@ -63,27 +105,51 @@
       <div class="incomes"> 
         <h3>毎月の収入</h3>
         <div class="content-box">
-          <h4>退職金  <%= fa_icon"info-circle" %></h4>
+          <h4>退職金  <a class="js-modal-open" href="" data-target="modal06"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>退職金ほか、退職時に会社から支給されるものがあれば合計額を入力してください。</p>
             <%= f.text_field :nenkin, class:"price-form", id:"taisyoku-form" ,value:"0"%>円
           </div>
+          <div id="modal06" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>退職金詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>失業手当  <%= fa_icon"info-circle" %></h4>
+          <h4>失業手当  <a class="js-modal-open" href="" data-target="modal07"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>基本手当日額を入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form", id:"situgyou-form" ,value:"0"%>円
             </div>
           </div>
+          <div id="modal07" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>失業手当詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
+            </div>
+          </div>
         </div>
         <div class="content-box">
-          <h4>その他の固定収入  <%= fa_icon"info-circle" %></h4>
+          <h4>その他の固定収入  <a class="js-modal-open" href="" data-target="modal08"><%= fa_icon"info-circle" %></a></h4>
           <div class="content">
             <p>上記以外にも毎月の固定収入がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form", id:"other-income-form" ,value:"0"%>円
+            </div>
+          </div>
+          <div id="modal08" class="modal js-modal">
+            <div class="modal_bg js-modal-close">
+            </div>
+            <div class="modal_content">
+              <p>固定収入詳細</p>
+              <a class="js-modal-close" href="">閉じる</a>
             </div>
           </div>
         </div>
