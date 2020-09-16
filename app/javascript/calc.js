@@ -10,6 +10,11 @@ $(function(){
 
       const spending_sum = nenkin + kokuho + juumin + seikatu + other_spending
       $('#spending-sum').html(spending_sum.toLocaleString());
+
+      $('.spending-sell').each(function(){
+        $(this).html(spending_sum.toLocaleString());
+      });
+
     });
   });
 
@@ -22,12 +27,21 @@ $(function(){
 
       const income_sum = taisyoku + situgyou + other_income
       $('#income-sum').html(income_sum.toLocaleString());
+
+      const income_1 = taisyoku + other_income
+      $('#income-sell-1').html(income_1.toLocaleString());
+
+      
+
+
+
     });
   });
   
   
   $('.stock-form').on('input',function(){
     const stock = parseInt( $( '#stock-form' ).val() );
-    $('#income-sum').html(stock.toLocaleString());
+    $('#stock-sum').html(stock.toLocaleString());
+    $('#stock0').html(stock.toLocaleString());
   });
 });

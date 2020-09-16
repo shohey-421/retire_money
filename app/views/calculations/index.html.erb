@@ -129,7 +129,7 @@
         <div class="content-box">
           <h3>失業手当  <a class="js-modal-open" href="" data-target="modal07"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>基本手当日額を入力してください。</p>
+            <p>基本手当日額×30を入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form income-form", id:"situgyou-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -203,6 +203,10 @@
       </div>
 
     <% end %>
+  </div>
+
+  <div class="table-wrapper">
+    <%= render "table" %>
   </div>
 </div>
 

@@ -10,7 +10,7 @@ a{
 
 .calc-wrapper{
   width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding: 30px;
   background-color:#fff;
   border-radius: 10px;
@@ -77,4 +77,12 @@ h4>i{
 
 .sum {
   margin-right: 10px;
+}
+
+.table-wrapper{
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color:#fff;
+  border-radius: 10px;
 }
