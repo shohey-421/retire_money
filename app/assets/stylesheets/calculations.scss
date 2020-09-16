@@ -55,6 +55,14 @@ h4>i{
   width: 100px;
 }
 
+.radio-box{
+  display: flex;
+}
+
+.radio{
+  margin:15px 30px 0 0;
+}
+
 .sum-box{
   margin-top: 30px;
   display: flex;
@@ -79,10 +87,65 @@ h4>i{
   margin-right: 10px;
 }
 
+.stocks{
+  margin-top: 30px;
+}
+
+.create-table{
+  margin-top: 60px ;
+  display: flex;
+  justify-content: center;
+}
+
+.create-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  width: 25%;
+  margin: 0 5px;
+}
+.create-btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+  margin-top:4px;
+}
+
+.reset-btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #838a97;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  width: 25%;
+  margin: 0 5px;
+}
+.reset-btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+  margin-top:4px;
+}
+
 .table-wrapper{
   width: 800px;
   margin: 0 auto;
   padding: 30px;
   background-color:#fff;
   border-radius: 10px;
+  display: none;
+}
+
+.stock-table{
+  margin: 30px auto;
+}
+
+.minus {
+  color: red;
 }

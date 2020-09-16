@@ -10,6 +10,7 @@ require("channels")
 require("jquery")
 require("../modal.js")
 require("../calc.js")
+require("../btn.js")
 
 
 

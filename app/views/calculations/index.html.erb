@@ -129,7 +129,25 @@
         <div class="content-box">
           <h3>失業手当  <a class="js-modal-open" href="" data-target="modal07"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>基本手当日額×30を入力してください。</p>
+            <div class="content-sub">
+              <p>基本手当日額×30の金額を入力してください。<br>また、給付制限の有無と給付日数を選択してください。</p>
+              <div class="radio-box">
+                <div class="radio">
+                  <%= f.radio_button :limit, :true, checked: true %>
+                  <%= f.label :gender, "給付制限あり" %>
+                  <%= f.radio_button :limit, :false %>
+                  <%= f.label :gender, "給付制限なし" %>
+                </div>
+                <div class="radio">
+                  <%= f.radio_button :benefit_date, :date90, checked: true %>
+                  <%= f.label :gender, "90日" %>
+                  <%= f.radio_button :benefit_date, :date120 %>
+                  <%= f.label :gender, "120日" %>
+                  <%= f.radio_button :benefit_date, :date150 %>
+                  <%= f.label :gender, "150日" %>
+                </div>
+              </div>
+            </div>
             <div>
               <%= f.text_field :nenkin, class:"price-form income-form", id:"situgyou-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -176,7 +194,7 @@
         <div class="content-box">
           <h3>貯蓄額  <a class="js-modal-open" href="" data-target="modal09"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>退職後切り崩せる現時点での貯蓄の総額を入力してください</p>
+            <p>退職後切り崩せる、現時点での貯蓄の総額を入力してください</p>
             <div>
               <%= f.text_field :stock, class:"price-form stock-form", id:"stock-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -200,6 +218,11 @@
             円
           </div>
         </div>
+      </div>
+
+      <div class="create-table">
+        <button type="button" name="table" class="reset-btn">入力内容をリセット</button>
+        <button type="submit" name="table" class="create-btn">表を作成・更新</button>
       </div>
 
     <% end %>
