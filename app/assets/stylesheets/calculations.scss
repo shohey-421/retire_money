@@ -16,6 +16,11 @@ a{
   border-radius: 10px;
 }
 
+.top-message{
+  margin: 0 auto;
+  width: 650px;
+}
+
 .spendings{
   margin-top: 30px;
 }
@@ -61,6 +66,13 @@ h4>i{
 
 .sum-title{
   margin-right: 30px;
+}
+
+.sum-price-box{
+  display: flex;
+  justify-content: flex-end;
+  width: 140px;
+  border-bottom: 1px solid black;
 }
 
 .sum {
