@@ -135,7 +135,7 @@
               <div class="radio-box">
                 <div class="radio">
                   <%= f.radio_button :limit, :true, checked: true %>
-                  <%= f.label :gender, "給付制限あり" %>
+                  <%= f.label :gender, "給付制限あり" %><br>
                   <%= f.radio_button :limit, :false %>
                   <%= f.label :gender, "給付制限なし" %>
                 </div>
@@ -146,6 +146,14 @@
                   <%= f.label :gender, "120日" %>
                   <%= f.radio_button :benefit_date, :date150 %>
                   <%= f.label :gender, "150日" %>
+                  <%= f.radio_button :benefit_date, :date180 %>
+                  <%= f.label :gender, "180日" %><br>
+                  <%= f.radio_button :benefit_date, :date210 %>
+                  <%= f.label :gender, "210日" %>
+                  <%= f.radio_button :benefit_date, :date240 %>
+                  <%= f.label :gender, "240日" %>
+                  <%= f.radio_button :benefit_date, :date270 %>
+                  <%= f.label :gender, "270日" %>
                 </div>
               </div>
             </div>

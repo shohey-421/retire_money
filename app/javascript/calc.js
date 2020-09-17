@@ -84,7 +84,7 @@ $(function(){
       $('#income-sell-11').html(other_income.toLocaleString());
       $('#income-sell-12').html(other_income.toLocaleString());
     };
-    // 給付制限あり120日
+    // 給付制限あり150日
     if($('#limit_true').prop('checked') && $('#benefit_date_date150').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
@@ -98,6 +98,66 @@ $(function(){
       $('#income-sell-10').html(other_income.toLocaleString());
       $('#income-sell-11').html(other_income.toLocaleString());
       $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限あり180日
+    if($('#limit_true').prop('checked') && $('#benefit_date_date180').prop('checked')){
+      $('#income-sell-1').html(taisyoku_other.toLocaleString());
+      $('#income-sell-2').html(other_income.toLocaleString());
+      $('#income-sell-3').html(other_income.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(situgyou_other.toLocaleString());
+      $('#income-sell-10').html(other_income.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限あり210日
+    if($('#limit_true').prop('checked') && $('#benefit_date_date210').prop('checked')){
+      $('#income-sell-1').html(taisyoku_other.toLocaleString());
+      $('#income-sell-2').html(other_income.toLocaleString());
+      $('#income-sell-3').html(other_income.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(situgyou_other.toLocaleString());
+      $('#income-sell-10').html(situgyou_other.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限あり240日
+    if($('#limit_true').prop('checked') && $('#benefit_date_date240').prop('checked')){
+      $('#income-sell-1').html(taisyoku_other.toLocaleString());
+      $('#income-sell-2').html(other_income.toLocaleString());
+      $('#income-sell-3').html(other_income.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(situgyou_other.toLocaleString());
+      $('#income-sell-10').html(situgyou_other.toLocaleString());
+      $('#income-sell-11').html(situgyou_other.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限あり270日
+    if($('#limit_true').prop('checked') && $('#benefit_date_date270').prop('checked')){
+      $('#income-sell-1').html(taisyoku_other.toLocaleString());
+      $('#income-sell-2').html(other_income.toLocaleString());
+      $('#income-sell-3').html(other_income.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(situgyou_other.toLocaleString());
+      $('#income-sell-10').html(situgyou_other.toLocaleString());
+      $('#income-sell-11').html(situgyou_other.toLocaleString());
+      $('#income-sell-12').html(situgyou_other.toLocaleString());
     };
     // 給付制限なし90日
     if($('#limit_false').prop('checked') && $('#benefit_date_date90').prop('checked')){
@@ -129,7 +189,7 @@ $(function(){
       $('#income-sell-11').html(other_income.toLocaleString());
       $('#income-sell-12').html(other_income.toLocaleString());
     };
-    // 給付制限なし120日
+    // 給付制限なし150日
     if($('#limit_false').prop('checked') && $('#benefit_date_date150').prop('checked')){
       $('#income-sell-1').html(income_sum.toLocaleString());
       $('#income-sell-2').html(situgyou_other.toLocaleString());
@@ -140,6 +200,66 @@ $(function(){
       $('#income-sell-7').html(other_income.toLocaleString());
       $('#income-sell-8').html(other_income.toLocaleString());
       $('#income-sell-9').html(other_income.toLocaleString());
+      $('#income-sell-10').html(other_income.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限なし180日
+    if($('#limit_false').prop('checked') && $('#benefit_date_date180').prop('checked')){
+      $('#income-sell-1').html(income_sum.toLocaleString());
+      $('#income-sell-2').html(situgyou_other.toLocaleString());
+      $('#income-sell-3').html(situgyou_other.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(other_income.toLocaleString());
+      $('#income-sell-8').html(other_income.toLocaleString());
+      $('#income-sell-9').html(other_income.toLocaleString());
+      $('#income-sell-10').html(other_income.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限なし210日
+    if($('#limit_false').prop('checked') && $('#benefit_date_date210').prop('checked')){
+      $('#income-sell-1').html(income_sum.toLocaleString());
+      $('#income-sell-2').html(situgyou_other.toLocaleString());
+      $('#income-sell-3').html(situgyou_other.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(other_income.toLocaleString());
+      $('#income-sell-9').html(other_income.toLocaleString());
+      $('#income-sell-10').html(other_income.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限なし240日
+    if($('#limit_false').prop('checked') && $('#benefit_date_date240').prop('checked')){
+      $('#income-sell-1').html(income_sum.toLocaleString());
+      $('#income-sell-2').html(situgyou_other.toLocaleString());
+      $('#income-sell-3').html(situgyou_other.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(other_income.toLocaleString());
+      $('#income-sell-10').html(other_income.toLocaleString());
+      $('#income-sell-11').html(other_income.toLocaleString());
+      $('#income-sell-12').html(other_income.toLocaleString());
+    };
+    // 給付制限なし270日
+    if($('#limit_false').prop('checked') && $('#benefit_date_date270').prop('checked')){
+      $('#income-sell-1').html(income_sum.toLocaleString());
+      $('#income-sell-2').html(situgyou_other.toLocaleString());
+      $('#income-sell-3').html(situgyou_other.toLocaleString());
+      $('#income-sell-4').html(situgyou_other.toLocaleString());
+      $('#income-sell-5').html(situgyou_other.toLocaleString());
+      $('#income-sell-6').html(situgyou_other.toLocaleString());
+      $('#income-sell-7').html(situgyou_other.toLocaleString());
+      $('#income-sell-8').html(situgyou_other.toLocaleString());
+      $('#income-sell-9').html(situgyou_other.toLocaleString());
       $('#income-sell-10').html(other_income.toLocaleString());
       $('#income-sell-11').html(other_income.toLocaleString());
       $('#income-sell-12').html(other_income.toLocaleString());
