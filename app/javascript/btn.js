@@ -1,6 +1,7 @@
 $(function(){
   $('.reset-btn').on('click',function(){
     window.location.reload();
+    return false;
   }); 
 
   $('.create-btn').on('click',function(){
@@ -10,4 +11,3 @@ $(function(){
 
   }); 
 });
-

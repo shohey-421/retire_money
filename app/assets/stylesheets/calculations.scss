@@ -4,7 +4,9 @@ a{
 }
 
 .main{
-  background-color: #ddd;
+  background-image: url('leaves.jpg') ;
+  background-size:400px ;
+  background-repeat: repeat;
   padding: 30px 0;
 }
 
@@ -14,6 +16,7 @@ a{
   padding: 30px;
   background-color:#fff;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 .top-message{
@@ -29,12 +32,18 @@ a{
   margin-top: 30px;
 }
 
-h4>i{
-  cursor: pointer;
+.h2-box{
+  display: flex;
 }
 
+.h2-image{
+  height:40px;
+  margin-left:10px ;
+}
+
+
 .content-box{
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .content{
@@ -140,6 +149,8 @@ h4>i{
   background-color:#fff;
   border-radius: 10px;
   display: none;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+
 }
 
 .stock-table{
@@ -148,4 +159,9 @@ h4>i{
 
 .minus {
   color: red;
+}
+
+.error-massage{
+  color: red;
+  text-align: right;
 }

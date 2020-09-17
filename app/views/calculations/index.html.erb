@@ -5,7 +5,7 @@
 
     <div class="top-message">
       <p>これから転職を考えている方向けに、退職後の支出と収入を整理するためのサイトです。<br>
-      退職後は、給料から天引きされていたものを自分自身で支払うことになります。<br>
+      退職後は思っているよりお金が出ていきます。<br>
       貯蓄とキャッシュフローを整理して、退職時期などの参考にしてください。<br>
       <%= fa_icon"info-circle" %> をクリックすると詳細説明や参考リンクが表示されます。
       </p>
@@ -14,7 +14,11 @@
     <%= form_with url: root_path do |f| %>
 
       <div class="spendings">
-        <h2>毎月の支出</h2>
+        <div class="h2-box">
+          <h2>毎月の支出</h2>
+          <%= image_tag 'money_fly_yen.png', class:"h2-image" %>
+        </div>
+        <p class="error-massage" id="spending-error"></p>
         <div class="content-box">
           <h3>国民年金  <a class="js-modal-open" href="" data-target="modal01"><%= fa_icon"info-circle" %></a> </h3>
           <div class="content">
@@ -68,7 +72,7 @@
         <div class="content-box">
           <h3>生活費  <a class="js-modal-open" href="" data-target="modal04"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>月の生活費の平均を入力してください。</p>
+            <p>上記の社会保険料を除く月の生活費の平均を入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"seikatu-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -82,18 +86,11 @@
           </div>
         </div>
         <div class="content-box">
-          <h3>その他の固定支出  <a class="js-modal-open" href="" data-target="modal05"><%= fa_icon"info-circle" %></a></h3>
+          <h3>その他の固定支出 </h3>
           <div class="content">
-            <p>上記以外にも毎月の固定支出がある場合は入力してください。</p>
+            <p>上記以外に、毎月の固定支出がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"other-spending-form" ,value:"0", maxlength:"8"%>円
-            </div>
-          </div>
-          <div id="modal05" class="modal js-modal">
-            <div class="modal_bg js-modal-close">
-            </div>
-            <div class="modal_content">
-              <%= render "calculations/modal/other_spending" %>
             </div>
           </div>
         </div>
@@ -111,7 +108,11 @@
       </div>
 
       <div class="incomes"> 
-        <h2>退職後の収入</h2>
+        <div class="h2-box">
+          <h2>退職後の収入</h2>
+          <%= image_tag 'fuutou.png', class:"h2-image" %>
+        </div>
+        <p class="error-massage" id="income-error"></p>
         <div class="content-box">
           <h3>退職金  <a class="js-modal-open" href="" data-target="modal06"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
@@ -161,18 +162,11 @@
           </div>
         </div>
         <div class="content-box">
-          <h3>その他の固定収入  <a class="js-modal-open" href="" data-target="modal08"><%= fa_icon"info-circle" %></a></h3>
+          <h3>その他の固定収入 </h3>
           <div class="content">
-            <p>上記以外にも毎月の固定収入がある場合は入力してください。</p>
+            <p>上記以外に、毎月の固定収入がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form income-form", id:"other-income-form" ,value:"0", maxlength:"8"%>円
-            </div>
-          </div>
-          <div id="modal08" class="modal js-modal">
-            <div class="modal_bg js-modal-close">
-            </div>
-            <div class="modal_content">
-              <%= render "calculations/modal/other_income" %>
             </div>
           </div>
         </div>
@@ -190,11 +184,15 @@
       </div>
 
       <div class="stocks"> 
-        <h2>現在の貯蓄</h2>
+        <div class="h2-box">
+          <h2>現在の貯蓄</h2>
+          <%= image_tag 'money_bag_yen.png', class:"h2-image" %>
+        </div>
+        <p class="error-massage" id="stock-error"></p>
         <div class="content-box">
           <h3>貯蓄額  <a class="js-modal-open" href="" data-target="modal09"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>退職後切り崩せる、現時点での貯蓄の総額を入力してください</p>
+            <p>退職後切り崩し可能な、現時点での貯蓄の額を入力してください</p>
             <div>
               <%= f.text_field :stock, class:"price-form stock-form", id:"stock-form" ,value:"0", maxlength:"8"%>円
             </div>

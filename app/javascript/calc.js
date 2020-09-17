@@ -10,8 +10,15 @@ $(function(){
       const other_spending = parseInt( $( '#other-spending-form' ).val() );
 
       const spending_sum = nenkin + kokuho + juumin + seikatu + other_spending
-      $('#spending-sum').html(spending_sum.toLocaleString());
 
+      if(isNaN(spending_sum)){
+        $('#spending-error').html("フォームには半角数字を入力してください")
+        $('#spending-sum').html("");
+      }else{
+        $('#spending-sum').html(spending_sum.toLocaleString());
+        $('#spending-error').html("")
+      }
+      
       // tableへの出力
       $('.spending-sell').each(function(){
         $(this).html(spending_sum.toLocaleString());
@@ -35,7 +42,13 @@ $(function(){
     const other_income = parseInt( $( '#other-income-form' ).val() );
 
     const income_sum = taisyoku + situgyou + other_income
-    $('#income-sum').html(income_sum.toLocaleString());
+    if(isNaN(income_sum)){
+      $('#income-error').html("フォームには半角数字を入力してください")
+      $('#income-sum').html("");
+    }else{
+      $('#income-sum').html(income_sum.toLocaleString());
+      $('#income-error').html("")
+    }
 
     // tableへの出力
     const taisyoku_other = taisyoku + other_income
@@ -136,8 +149,17 @@ $(function(){
   // 現在の貯蓄の合計計算とtable編集
   $('.stock-form').on('input',function(){
     const stock = parseInt( $( '#stock-form' ).val() );
-    $('#stock-sum').html(stock.toLocaleString());
-    $('#stock-0').html(stock.toLocaleString());
+
+    if(isNaN(stock)){
+      $('#stock-error').html("フォームには半角数字を入力してください")
+      $('#stock-sum').html("");
+      $('#stock-0').html("");
+    }else{
+      $('#stock-sum').html(stock.toLocaleString());
+      $('#stock-0').html(stock.toLocaleString());
+      $('#stock-error').html("")
+    }
+
   });
 
   // tableの貯蓄の合計計算
