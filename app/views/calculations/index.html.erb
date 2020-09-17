@@ -4,7 +4,7 @@
   <div class="calc-wrapper">
 
     <div class="top-message">
-      <p>これから転職を考えている方向けに、退職後の支出と収入を整理するためのサイトです。<br>
+      <p>転職に伴う退職を考えている方向けにその後のお金の収支を整理するためのサイトです。<br>
       フォームに金額を入力することで、退職後１年間のざっくりとした見積もりができます。<br>
       貯蓄とキャッシュフローを整理して、退職時期などの参考にしてください。<br>
       <%= fa_icon"info-circle" %> をクリックすると詳細説明や参考リンクが表示されます。
@@ -20,9 +20,9 @@
         </div>
         <p class="error-massage" id="spending-error"></p>
         <div class="content-box">
-          <h3>国民年金  <a class="js-modal-open" href="" data-target="modal01"><%= fa_icon"info-circle" %></a> </h3>
+          <h3>国民年金 <a class="js-modal-open" href="" data-target="modal01"><%= fa_icon"info-circle" %></a> </h3>
           <div class="content">
-            <p>日本国内に住む20歳以上60歳未満のすべての人が加入します。</p>
+            <p>日本に住む20歳以上60歳未満のすべての人が加入します。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"nenkin-form" , value:"16540", maxlength:"8"%>円
             </div>
@@ -38,7 +38,7 @@
         <div class="content-box">
           <h3>国民健康保険  <a class="js-modal-open" href="" data-target="modal02"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>会社の健康保険に加入していない方が加入します。<br>保険料は市区町村によって変わります。<br>
+            <p>会社の健康保険に加入していない方が加入します。<br>
             ※支払いは毎月ではありませんが、月あたりの金額を知っておくと便利です。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"kokuho-form" ,value:"0", maxlength:"8"%>円
@@ -55,7 +55,7 @@
         <div class="content-box">
           <h3>住民税  <a class="js-modal-open" href="" data-target="modal03"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>会社に勤めていない場合は、個人で納める必要があります。<br>税額は前年の所得と市区町村によって変わります。<br>
+            <p>会社に勤めていない場合は、自分で納める必要があります。<br>
             ※支払いは毎月ではありませんが、月あたりの金額を知っておくと便利です。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"juumin-form" ,value:"0", maxlength:"8"%>円
@@ -72,7 +72,7 @@
         <div class="content-box">
           <h3>生活費  <a class="js-modal-open" href="" data-target="modal04"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>上記の社会保険料を除く月の生活費の平均を入力してください。</p>
+            <p>上の３つを除いて、今の月の生活費を入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"seikatu-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -88,7 +88,7 @@
         <div class="content-box">
           <h3>その他の固定支出 </h3>
           <div class="content">
-            <p>上記以外に、毎月の固定支出がある場合は入力してください。</p>
+            <p>他に毎月の決まった支出がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"other-spending-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -116,7 +116,7 @@
         <div class="content-box">
           <h3>退職金  <a class="js-modal-open" href="" data-target="modal06"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>退職金ほか、退職時に会社から支給されるものがあれば合計額を入力してください。</p>
+            <p>退職金のほかにも会社から支給されるものがある時は、全ての合計額を入力してください。</p>
             <%= f.text_field :nenkin, class:"price-form income-form", id:"taisyoku-form" ,value:"0", maxlength:"8"%>円
           </div>
           <div id="modal06" class="modal js-modal">
@@ -172,7 +172,7 @@
         <div class="content-box">
           <h3>その他の固定収入 </h3>
           <div class="content">
-            <p>上記以外に、毎月の固定収入がある場合は入力してください。</p>
+            <p>上２つの他に毎月の決まった収入がある場合は入力してください。</p>
             <div>
               <%= f.text_field :nenkin, class:"price-form income-form", id:"other-income-form" ,value:"0", maxlength:"8"%>円
             </div>
@@ -200,7 +200,7 @@
         <div class="content-box">
           <h3>貯蓄額  <a class="js-modal-open" href="" data-target="modal09"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>退職後切り崩し可能な、現時点での貯蓄の額を入力してください</p>
+            <p>退職後に切り崩し可能な、現時点での貯蓄額を入力してください。</p>
             <div>
               <%= f.text_field :stock, class:"price-form stock-form", id:"stock-form" ,value:"0", maxlength:"8"%>円
             </div>
