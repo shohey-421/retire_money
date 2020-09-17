@@ -1,24 +1,46 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション名
+退職前にお金について整理するサイト
 
-Things you may want to cover:
+## アプリケーション概要
+フォームの説明に沿って収入や支出、現在の貯蓄額を入力することで、退職後１年間分の貯蓄推移を表で確認できます。
 
-* Ruby version
+## URL
 
-* System dependencies
+## 利用方法
+![table](https://user-images.githubusercontent.com/69449342/93432699-dbbaf380-f900-11ea-8f9a-cae7456f8b89.gif)
 
-* Configuration
+![modal](https://user-images.githubusercontent.com/69449342/93432777-f4c3a480-f900-11ea-9cc5-62dd7adca403.gif)
 
-* Database creation
+- フォームに金額を入力した後、「表を作成・更新」ボタンをクリックしてください。
+- 入力内容に不備がある場合はメッセージが表示されますので、修正してください。
+- 項目名横の「iマーク」をクリックすることで、詳細説明や参考リンクが確認できます。
+- 「入力内容をリセット」ボタンをクリックすることでフォームと表が初期化されます。
 
-* Database initialization
+## ローカルでの動作方法
+`$ git clone https://github.com/shohey-421/retire_money.git`  
+`% cd hoge`
+`% bundle install`
+`% rails db:create`
+`% rails db:migrate`
+`$ rails s`
 
-* How to run the test suite
+- - -
 
-* Services (job queues, cache servers, search engines, etc.)
+## 目指した課題解決
+会社に勤めている場合とそうでない場合で、社会保険料や生活費が大きく変わってきます。
+そんな中で、退職や転職に伴うお金の不安、手間を少しでも楽に解決できるよう作成しました。
 
-* Deployment instructions
+## 洗い出した要件
+- 退職後の支出においては、社会保険料（年金、健康保険）、住民税、生活費、その他を設ける。
+- 退職後の収入においては、退職金、失業保険、その他を設ける。
+- 失業保険は条件によって給付期間やタイミングが異なるので、条件に応じて表示を変える。
+- フォームに金額の入力が終わっていれば、1年間の貯蓄の推移がわかる表を表示する。
+- 貯蓄がマイナスになる場合は赤文字にする。
+- 各入力項目の詳細説明はモーダルウィンドウで表示する。
+- 各入力金額自体の計算は計算方法が多岐にわたるため機能には組み込まず、計算方法がわかる外部リンクを設置する。
+- フォームに半角数字以外が入力された場合はメッセージを表示する。
 
-* ...
+## 実装予定の機能
+- 表の外部データ出力機能（スプレッドシートなど）を検討しています。
