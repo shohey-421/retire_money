@@ -8,7 +8,14 @@
   </div>
 
   <div class="header-right">
-      <p id="policy-btn">利用規約</p>
+    <a class="js-modal-open" href="" data-target="modal00">利用規約</a>
+    <div id="modal00" class="modal js-modal">
+      <div class="modal_bg js-modal-close">
+      </div>
+      <div class="modal_content">
+        <%= render "calculations/modal/terms" %>
+      </div>
+    </div>
   </div>
 
 </div>
