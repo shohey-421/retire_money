@@ -7,7 +7,7 @@
       <p>転職に伴う退職を考えている方向けにその後のお金の収支を整理するためのサイトです。<br>
       フォームに金額を入力することで、退職後１年間のざっくりとした見積もりができます。<br>
       貯蓄とキャッシュフローを整理して、退職時期などの参考にしてください。<br>
-      <%= fa_icon"info-circle" %> をクリックすると詳細説明や参考リンクが表示されます。
+      <%= fa_icon"info-circle" %> をクリックすると詳しい説明や参考になるリンクが表示されます。
       </p>
     </div>
 
@@ -200,7 +200,7 @@
         <div class="content-box">
           <h3>貯蓄額  <a class="js-modal-open" href="" data-target="modal09"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
-            <p>退職後に切り崩し可能な、現時点での貯蓄額を入力してください。</p>
+            <p>退職後に切り崩しできる、今の貯蓄額を入力してください。</p>
             <div>
               <%= f.text_field :stock, class:"price-form stock-form", id:"stock-form" ,value:"0", maxlength:"8"%>円
             </div>
