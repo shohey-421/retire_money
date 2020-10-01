@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: retire_money_production
-  username: retire_money
-  password: <%= ENV['RETIRE_MONEY_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
