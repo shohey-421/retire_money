@@ -76,9 +76,20 @@ a{
   box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
+
+
 .top-message{
-  margin: 0 auto;
-  width: 650px;
+  width: 95%;
+  padding: 0.5em 1em;
+  margin: 1em auto 3em;
+  color: #474747;
+  background: whitesmoke;/*背景色*/
+  border-left: double 7px #4ec4d3;/*左線*/
+  border-right: double 7px #4ec4d3;/*右線*/
+}
+.top-message p {
+  margin: 0; 
+  padding: 0;
 }
 
 .spendings{
