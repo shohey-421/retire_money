@@ -18,13 +18,12 @@
 主にそのような方に向けて、お金の計算を少しでもサポートできればと思い制作しました。
 
 ## 利用方法
-![table](https://user-images.githubusercontent.com/69449342/94896545-b1ecf980-04c8-11eb-87b9-abdfed6a5341.gif)
-![modal](https://user-images.githubusercontent.com/69449342/94896540-af8a9f80-04c8-11eb-8abc-fb8b4e3d7435.gif)
-
 - フォームに金額を入力した後、「表を作成・更新」ボタンをクリックしてください。
 - 入力内容に不備がある場合はメッセージが表示されますので、修正してください。
 - 項目名横の「iマーク」をクリックすることで、詳細説明や参考リンクが確認できます。
 - 「入力内容をリセット」ボタンをクリックすることでフォームと表が初期化されます。
+![table](https://user-images.githubusercontent.com/69449342/94896545-b1ecf980-04c8-11eb-87b9-abdfed6a5341.gif)
+![modal](https://user-images.githubusercontent.com/69449342/94896540-af8a9f80-04c8-11eb-8abc-fb8b4e3d7435.gif)
 
 ## ローカルでの動作方法
 `$ git clone https://github.com/shohey-421/retire_money.git`  
