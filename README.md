@@ -3,6 +3,12 @@
 ## 概要
 フォームの説明に沿って収入や支出、現在の貯蓄額を入力することで、退職後１年間分の貯蓄推移を表で確認できます。
 
+## 開発環境 
+- Ruby 2.6.5
+- Ruby on Rails 6.0.0
+- jQuery
+- VSCode(Visual Studio Code)
+
 ## 制作背景
 会社に勤めている場合とそうでない場合で、社会保険料などの負担が大きく変わってきます。  
 退職後に転職活動を予定していたりすると、お金の心配事は特に大きいのではないでしょうか。
@@ -23,15 +29,12 @@
 
 ## ローカルでの動作方法
 `$ git clone https://github.com/shohey-421/retire_money.git`  
-`% cd hoge`  
+`% cd retire_money.git`  
 `% bundle install`  
 `% rails db:create`  
 `% rails db:migrate`  
 `$ rails s`  
 
 - - -
-
-
-
 ## 実装予定の機能
-- 表の外部データ出力機能（スプレッドシートなど）を検討しています。
+- 表の外部データ出力機能（スプレッドシートなど）、一時保存
