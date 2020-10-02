@@ -19,7 +19,6 @@
 
 ## 利用方法
 ![table](https://user-images.githubusercontent.com/69449342/94896545-b1ecf980-04c8-11eb-87b9-abdfed6a5341.gif)
-
 ![modal](https://user-images.githubusercontent.com/69449342/94896540-af8a9f80-04c8-11eb-8abc-fb8b4e3d7435.gif)
 
 - フォームに金額を入力した後、「表を作成・更新」ボタンをクリックしてください。
