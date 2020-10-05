@@ -27,7 +27,7 @@
 
 ## ローカルでの動作方法
 `$ git clone https://github.com/shohey-421/retire_money.git`  
-`% cd retire_money.git`  
+`% cd retire_money`  
 `% bundle install`  
 `% rails db:create`  
 `% rails db:migrate`  
