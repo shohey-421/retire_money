@@ -33,7 +33,7 @@
           <h3>国民年金 <a class="js-modal-open" href="" data-target="modal01"><%= fa_icon"info-circle" %></a> </h3>
           <div class="content">
             <p>日本に住む20歳以上60歳未満のすべての人が加入します。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"nenkin-form" , value:"16540", maxlength:"8"%>円
             </div>
           </div>
@@ -50,7 +50,7 @@
           <div class="content">
             <p>会社の健康保険に加入していない方が加入します。<br>
             ※支払いは毎月ではありませんが、月あたりの金額を知っておくと便利です。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"kokuho-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -67,7 +67,7 @@
           <div class="content">
             <p>会社に勤めていない場合は、自分で納める必要があります。<br>
             ※支払いは毎月ではありませんが、月あたりの金額を知っておくと便利です。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"juumin-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -83,7 +83,7 @@
           <h3>生活費  <a class="js-modal-open" href="" data-target="modal04"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
             <p>上の３つを除いて、今の月の生活費を入力してください。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"seikatu-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -99,7 +99,7 @@
           <h3>その他の固定支出 </h3>
           <div class="content">
             <p>他に毎月の決まった支出がある場合は入力してください。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form spending-form", id:"other-spending-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -127,7 +127,9 @@
           <h3>退職金  <a class="js-modal-open" href="" data-target="modal06"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
             <p>退職金のほかにも会社から支給されるものがある時は、全ての合計額を入力してください。</p>
-            <%= f.text_field :nenkin, class:"price-form income-form", id:"taisyoku-form" ,value:"0", maxlength:"8"%>円
+            <div class="prise-form-box">
+              <%= f.text_field :nenkin, class:"price-form income-form", id:"taisyoku-form" ,value:"0", maxlength:"8"%>円
+            </div>
           </div>
           <div id="modal06" class="modal js-modal">
             <div class="modal_bg js-modal-close">
@@ -167,7 +169,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form income-form", id:"situgyou-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -183,7 +185,7 @@
           <h3>その他の固定収入 </h3>
           <div class="content">
             <p>上２つの他に毎月の決まった収入がある場合は入力してください。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :nenkin, class:"price-form income-form", id:"other-income-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
@@ -211,7 +213,7 @@
           <h3>貯蓄額  <a class="js-modal-open" href="" data-target="modal09"><%= fa_icon"info-circle" %></a></h3>
           <div class="content">
             <p>退職後に切り崩しできる、今の貯蓄額を入力してください。</p>
-            <div>
+            <div class="prise-form-box">
               <%= f.text_field :stock, class:"price-form stock-form", id:"stock-form" ,value:"0", maxlength:"8"%>円
             </div>
           </div>
