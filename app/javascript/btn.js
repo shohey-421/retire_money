@@ -11,14 +11,14 @@ $(function(){
   }); 
 
   $('#page_top').hide();
-  $(window).scroll(function () {
+  $(window).on("scroll", function () {
      if ($(this).scrollTop() > 100) {
       $('#page_top').fadeIn();
      } else {
       $('#page_top').fadeOut();
      }
   });
-  $('#page_top').click(function () {
+  $('#page_top').on("click",function () {
      $('body, html').animate({ scrollTop: 0 }, 500);
      return false;
   });

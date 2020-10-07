@@ -55,7 +55,8 @@ $(function(){
     const situgyou_other = situgyou + other_income
 
     // 給付制限あり90日
-    if($('#limit_true').prop('checked') && $('#benefit_date_date90').prop('checked')){
+    if($('#limit_true').prop('checked') && 
+    $('#benefit_date_date90').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
       $('#income-sell-3').html(other_income.toLocaleString());
@@ -70,7 +71,8 @@ $(function(){
       $('#income-sell-12').html(other_income.toLocaleString());
     };
     // 給付制限あり120日
-    if($('#limit_true').prop('checked') && $('#benefit_date_date120').prop('checked')){
+    if($('#limit_true').prop('checked') && 
+    $('#benefit_date_date120').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
       $('#income-sell-3').html(other_income.toLocaleString());
@@ -85,7 +87,8 @@ $(function(){
       $('#income-sell-12').html(other_income.toLocaleString());
     };
     // 給付制限あり150日
-    if($('#limit_true').prop('checked') && $('#benefit_date_date150').prop('checked')){
+    if($('#limit_true').prop('checked') && 
+    $('#benefit_date_date150').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
       $('#income-sell-3').html(other_income.toLocaleString());
@@ -100,7 +103,8 @@ $(function(){
       $('#income-sell-12').html(other_income.toLocaleString());
     };
     // 給付制限あり180日
-    if($('#limit_true').prop('checked') && $('#benefit_date_date180').prop('checked')){
+    if($('#limit_true').prop('checked') && 
+    $('#benefit_date_date180').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
       $('#income-sell-3').html(other_income.toLocaleString());
@@ -115,7 +119,8 @@ $(function(){
       $('#income-sell-12').html(other_income.toLocaleString());
     };
     // 給付制限あり210日
-    if($('#limit_true').prop('checked') && $('#benefit_date_date210').prop('checked')){
+    if($('#limit_true').prop('checked') && 
+    $('#benefit_date_date210').prop('checked')){
       $('#income-sell-1').html(taisyoku_other.toLocaleString());
       $('#income-sell-2').html(other_income.toLocaleString());
       $('#income-sell-3').html(other_income.toLocaleString());
