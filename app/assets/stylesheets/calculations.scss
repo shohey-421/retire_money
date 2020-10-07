@@ -87,9 +87,9 @@ a{
   width: 95%;
   padding: 0.5em 1em;
   margin: 1em auto 3em;
-  background: whitesmoke;/*背景色*/
-  border-left: double 7px #4ec4d3;/*左線*/
-  border-right: double 7px #4ec4d3;/*右線*/
+  background: whitesmoke;
+  border-left: double 7px #4ec4d3;
+  border-right: double 7px #4ec4d3;
 }
 
 .term{
@@ -216,4 +216,25 @@ a{
 .error-massage{
   color: red;
   text-align: right;
+}
+
+.page_top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.page_top span {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+.page_top span:hover {
+  background-color: #666;
+  text-decoration: none;
+  transition: 0.5s
 }
