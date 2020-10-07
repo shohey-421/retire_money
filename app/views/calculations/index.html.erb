@@ -1,7 +1,7 @@
 <%= render "shared/header" %>
 
 <div class="main">
-  <div class="calc-wrapper">
+  <div class="form-wrapper">
 
     <div class="top-message">
       <p>転職に伴う退職を考えている方向けに、その後のお金の収支を整理するためのサイトです。<br>
@@ -9,11 +9,21 @@
       貯蓄とキャッシュフローを整理して、退職時期などの参考にしてください。<br>
       <%= fa_icon"info-circle" %> をクリックすると詳しい説明や参考になるリンクが表示されます。
       </p>
+      <div class="term">
+        <a class="js-modal-open" href=""    data-target="modal00">利用規約</a>
+        <div id="modal00" class="modal js-modal">
+          <div class="modal_bg js-modal-close">
+          </div>
+          <div class="modal_content">
+            <%= render "calculations/modal/terms" %>
+          </div>
+        </div>
+      </div>
     </div>
 
     <%= form_with url: root_path do |f| %>
 
-      <div class="spendings">
+      <div class="contents-wrapper">
         <div class="h2-box">
           <h2>毎月の支出</h2>
           <%= image_tag 'money_fly_yen.png', class:"h2-image" %>
@@ -107,7 +117,7 @@
         </div>
       </div>
 
-      <div class="incomes"> 
+      <div class="contents-wrapper"> 
         <div class="h2-box">
           <h2>退職後の収入</h2>
           <%= image_tag 'fuutou.png', class:"h2-image" %>
@@ -191,7 +201,7 @@
         </div>
       </div>
 
-      <div class="stocks"> 
+      <div class="contents-wrapper"> 
         <div class="h2-box">
           <h2>現在の貯蓄</h2>
           <%= image_tag 'money_bag_yen.png', class:"h2-image" %>
@@ -226,9 +236,9 @@
         </div>
       </div>
 
-      <div class="create-table">
-        <button type="button" name="table" class="reset-btn">入力内容をリセット</button>
-        <button type="submit" name="table" class="create-btn">表を作成・更新</button>
+      <div class="btn-area">
+        <button type="button" name="table" class="btn reset-btn">入力内容をリセット</button>
+        <button type="submit" name="table" class="btn create-btn">表を作成・更新</button>
       </div>
 
     <% end %>

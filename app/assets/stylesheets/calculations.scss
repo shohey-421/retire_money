@@ -2,7 +2,6 @@ h2 {
   position: relative;
   padding-left: 25px;
 }
-
 h2:before {
   position: absolute;
   content: '';
@@ -14,7 +13,6 @@ h2:before {
   border-left: solid 15px transparent;
   border-bottom: solid 15px rgb(119, 195, 223);
 }
-
 h2:after {
   position: absolute;
   content: '';
@@ -22,6 +20,13 @@ h2:after {
   left: 10px;
   width: 100%;
   border-bottom: solid 3px rgb(119, 195, 223);
+}
+.h2-box{
+  display: flex;
+}
+.h2-image{
+  height:40px;
+  margin-left:10px ;
 }
 
 h3 {
@@ -54,7 +59,7 @@ h4:before {
 }
 
 a{
-  color: #000;
+  color: #474747;
   text-decoration: none;
 }
 
@@ -65,9 +70,10 @@ a{
   background-color:rgba(255,255,255,0.5);
   background-blend-mode:lighten;
   padding: 30px 0;
+  color: #474747;
 }
 
-.calc-wrapper{
+.form-wrapper{
   width: 800px;
   margin: 0 auto 20px;
   padding: 30px;
@@ -76,39 +82,23 @@ a{
   box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
-
-
 .top-message{
   width: 95%;
   padding: 0.5em 1em;
   margin: 1em auto 3em;
-  color: #474747;
   background: whitesmoke;/*背景色*/
   border-left: double 7px #4ec4d3;/*左線*/
   border-right: double 7px #4ec4d3;/*右線*/
 }
-.top-message p {
-  margin: 0; 
-  padding: 0;
+
+.term{
+  text-align: end;
+  font-weight: bold;
 }
 
-.spendings{
+.contents-wrapper{
   margin-top: 30px;
 }
-
-.incomes{
-  margin-top: 30px;
-}
-
-.h2-box{
-  display: flex;
-}
-
-.h2-image{
-  height:40px;
-  margin-left:10px ;
-}
-
 
 .content-box{
   margin-top: 30px;
@@ -130,14 +120,6 @@ a{
   padding-right:10px ;
   height: 25px;
   width: 100px;
-}
-
-.radio-box{
-  display: flex;
-}
-
-.radio{
-  margin:15px 30px 0 15px;
 }
 
 .sum-box{
@@ -164,50 +146,44 @@ a{
   margin-right: 10px;
 }
 
-.stocks{
-  margin-top: 30px;
+.radio-box{
+  display: flex;
 }
 
-.create-table{
+.radio{
+  margin:15px 30px 0 15px;
+}
+
+.btn-area{
   margin-top: 60px ;
   display: flex;
   justify-content: center;
 }
 
-.create-btn {
+.btn {
   display: inline-block;
   padding: 0.5em 1em;
   text-decoration: none;
-  background: rgb(119, 195, 223);
   color: #FFF;
-  border-bottom: solid 4px rgb(57, 151, 185);
   border-radius: 3px;
   width: 25%;
   margin: 0 5px;
 }
-.create-btn:active {
+.btn:active {
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
   border-bottom: none;
   margin-top:4px;
 }
 
-.reset-btn {
-  display: inline-block;
-  padding: 0.5em 1em;
-  text-decoration: none;
-  background: #838a97;
-  color: #FFF;
-  border-bottom: solid 4px #627295;
-  border-radius: 3px;
-  width: 25%;
-  margin: 0 5px;
+.create-btn {
+  background: rgb(119, 195, 223);
+  border-bottom: solid 4px rgb(57, 151, 185);
 }
-.reset-btn:active {
-  -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  border-bottom: none;
-  margin-top:4px;
+
+.reset-btn {
+  background: #838a97;
+  border-bottom: solid 4px #627295;
 }
 
 .table-wrapper{
@@ -218,7 +194,6 @@ a{
   border-radius: 10px;
   display: none;
   box-shadow: 0 0 10px rgba(0,0,0,.3);
-
 }
 
 .stock-table{

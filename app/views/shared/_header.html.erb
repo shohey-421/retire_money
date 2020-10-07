@@ -1,21 +1,9 @@
 <div class="header">
 
-  <div class="header-left">
-    <h1>退職後のお金について整理するサイト</h1>
-    <div class="title-image-box">
-      <%= image_tag "/title-icon.png" ,class:"title-icom"%>
-    </div>
-  </div>
-
-  <div class="header-right">
-    <a class="js-modal-open" href="" data-target="modal00">利用規約</a>
-    <div id="modal00" class="modal js-modal">
-      <div class="modal_bg js-modal-close">
-      </div>
-      <div class="modal_content">
-        <%= render "calculations/modal/terms" %>
-      </div>
-    </div>
+  <div class="title">
+    <%= link_to root_path do %>
+      <%= image_tag "title.png" ,alt:"退職後のお金について整理するサイト",class:"title-image"%>
+    <% end %>
   </div>
 
 </div>
