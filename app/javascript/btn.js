@@ -5,8 +5,10 @@ $(function(){
   }); 
 
   $('.create-btn').on('click',function(){
-    $('.table-wrapper').fadeIn();
-    $('body,html').animate({scrollTop: 5000}, 500);
+    const target = $('.table-wrapper')
+    target.fadeIn();
+    let position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, 500, "swing");
     return false;
   }); 
 
